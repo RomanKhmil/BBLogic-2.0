@@ -38,6 +38,8 @@
   <ItemGroup>
     <Compile Include="objects\Grid\GridCell.cs" />
     <Compile Include="objects\Grid\GridMap.cs" />
+    <Compile Include="objects\Grid\GridMapAdd.cs" />
+    <Compile Include="objects\Grid\GridMapRemove.cs" />
     <Compile Include="objects\Grid\GridMapSearch.cs" />
     <Compile Include="objects\Person.cs" />
     <Compile Include="objects\Point.cs" />

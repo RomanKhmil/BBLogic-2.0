@@ -24,6 +24,15 @@ namespace BadoonBotLogic_2._0_.objects
             this.x = X;
             this.y = Y;
         }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+            if (!(obj is Point))
+                return false;
+            Point temp = obj as Point;
+            return ((this.x == temp.x) && (this.y == temp.y));
+        }
         public string ToString()
         {
             return $"({this.x};{this.y})";

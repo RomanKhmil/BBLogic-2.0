@@ -14,9 +14,23 @@ namespace BadoonBotLogic_2._0_.objects.Grid
         
         GridCell[,] _map;
         partial void _findAtRadius(double radius,Point center);
+        partial void _add(Point user);
+        partial void _remove(Point user);
         public void FindAtRadius()
         {
-            _findAtRadius(3, new Point(51,51));
+            _findAtRadius(6, new Point(49,49));
+        }
+        public void Remove(Point user)
+        {
+            _remove(user);
+        }
+        public void Add(Person user)
+        {
+            _add(user);
+        }
+        public void Add(Point user)
+        {
+            _add(user);
         }
         public GridMap(int Resolution, Point RightTop,Point LeftBottom)
         {

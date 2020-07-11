@@ -12,11 +12,12 @@ namespace BadoonBotLogic_2._0_.objects.Grid
         Point rt;
         Point lb;
 
-        List<Person> users;
+        List<Point> _users;
         public GridCell(Point RightTop, Point LeftBottom)
         {
             this.rt = RightTop;
             this.lb = LeftBottom;
+            _users = new List<Point>();
         }
         public Point GetRightTop()
         {
@@ -25,6 +26,18 @@ namespace BadoonBotLogic_2._0_.objects.Grid
         public Point GetLeftBottom()
         {
             return lb;
+        }
+        public List<Point> GetUsers()
+        {
+            return _users;
+        }
+        public void Add(Point point)
+        {
+            _users.Add(point);
+        }
+        public void Remove(Point point)
+        {
+            _users.Remove(point);
         }
         public string ToString()
         {
